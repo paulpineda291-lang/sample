@@ -1,0 +1,36 @@
+<td>String pad</td>
+        <td><?= str_pad("HAU", 10, "*"); ?></td>
+    </tr>
+    <tr>
+        <td>Character at position</td>
+        <td><?= $school[0]; ?></td>
+    </tr>
+    <tr>
+        <td>String contains</td>
+        <td><?= str_contains($school, "ANGEL") ? "Yes" : "No"; ?></td>
+    </tr>
+    <tr>
+        <td>Starts with</td>
+        <td><?= str_starts_with($school, "HOLY") ? "Yes" : "No"; ?></td>
+    </tr>
+    <tr>
+        <td>Ends with</td>
+        <td><?= str_ends_with($school, "UNIVERSITY") ? "Yes" : "No"; ?></td>
+    </tr>
+    <tr>
+        <td>String to array (explode)</td>
+        <td><?= implode(", ", explode(" ", $school)); ?></td>
+    </tr>
+    <tr>
+        <td>MD5 hash</td>
+        <td><?= md5($name); ?></td>
+    </tr>
+    <tr>
+        <td>Convert to ASCII values</td>
+        <td><?= ord($school[0]); ?></td>
+    </tr>
+    <tr>
+        <td>Strip tags</td>
+        <td><?= strip_tags("<b>HAU</b>"); ?></td>
+    </tr>
+</table>
